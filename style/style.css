@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display' ,serif;
+}
+:root{
+    --color-button:#efaf4f;
+    --color-cofee:#603809;
+    --color-white:#ffffff;
+    --bassic-size:1rem;
+}
+html{
+    font-size: 18px;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1180px;
+}
+button{
+    font-size: 1rem;
+    background-color: var(--color-button);
+    border-radius: 1.5rem;
+    padding: 0.9rem 1.7rem;
+    border: none;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+
+}
+button:hover{
+   transform: scale(1.1);
+    background-color: #efaf4f;
+    cursor: pointer;
+}
+/*Header*/
+
+
+
+
+header{
+    background:   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/menu__bgi1.png') ;
+    background-size: cover;
+    background-position: top center ;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header__contact{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.1rem ;
+    color:var(--color-white);
+}
+.header__logo{
+    font-size: 1.9rem;
+    font-family: "Clicker Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.header__nav ul{
+    display: flex;
+    gap:2.3rem;
+    list-style-type: none;
+}
+.header__nav a{
+    color: var(--color-white);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+.header__nav a:hover{
+    scale: 1.3;
+    color: #FFEED8;
+}
+.burger__menu{
+    display: none;
+    padding: 1rem 1.5rem;
+}
+.header__menu--hidden{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 20;
+    display: none;
+
+    border-radius: 1px solid var(--color-white);
+}
+.hidden{
+    background-color: rgba(20, 20, 20, 0.9); /* Темно-серый, почти черный */
+    border-radius: 8px;
+    padding: 0.5rem;
+    z-index: 12;
+}
+.hidden ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.hidden a{
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+.header__buttons--hidden{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* main */
+
+main{
+    background-color: #FFFEFC;
+}
+
+/* morning */
+
+.morning{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/header__bgi.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.morning__main{
+    color: var(--color-white);
+
+    padding:10rem 0 5rem;
+}
+.morning__main h2{
+    font-weight: 500;
+    font-size:1.2rem;
+}
+.morning__main h1{
+    font-family: "Clicker Script", serif;
+    font-weight: 400;
+    font-size: 12rem;
+}
+.morning__main p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 27rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.9rem;
+}
+
+/*Discover*/
+
+.discover{
+    margin:4.5rem 0;
+}
+
+.discover__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.discover__info{
+    max-width: 32.5rem;
+    position: relative;
+}
+.coffe__blast--left{
+    position: absolute;
+    left: -5.6rem;
+    bottom: -8.4rem;
+    pointer-events:none;
+}
+
+.discover__info h1{
+    color: var(--color-cofee);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.discover__info p{
+    margin: 1.6rem 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #707070;
+    line-height: 1.9rem;
+}
+
+
+/*blend*/
+
+.blend__main h1{
+    text-align: center;
+    color: var(--color-cofee);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.blend__main h4{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #707070;
+    margin-bottom: 2rem;
+}
+.collection__coffe{
+    margin-bottom: 4.5rem;
+}
+.collection__coffe ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.1rem;
+    list-style-type: none;
+}
+.collection__coffe li{
+    background-color: rgba(249, 192, 106, 0.42);
+    position: relative;
+}
+.collection__coffe h3{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-cofee);
+    margin: 0.8rem 0 0.4rem;
+}
+.collection__coffe p{
+    font-size: 0.9rem;
+    color: #1E1E1E;
+    text-align: center;
+} 
+.collect__price{
+    font-size: 1rem;
+    font-weight: bold;
+     color: var(--color-cofee);
+    margin-top:0.3rem ;
+    margin-bottom: 2.3rem;
+}
+.collection__coffe button{
+    position: absolute;
+    bottom: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.collection__coffe button:hover{
+    scale: 1.1;
+    background-color: #efaf4f;
+}
+
+
+/*different*/
+
+
+.different{
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+.different__header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-cofee);
+    margin-bottom: 0.9rem;
+}
+.different__header p{
+    font-size: 1.1rem;
+    color: #707070;
+    margin-bottom: 1.7rem;
+}
+.different__collection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.1rem;
+
+}
+.different__card{
+    background-color: #FFF9F1;
+    padding: 2rem ;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    transition: all 0.3s ease-in;
+    margin-bottom: 1.7rem;
+}
+
+.different__card img{
+    margin-bottom: 1.3rem;
+}
+
+.different__card h3{
+    font-size: 1.5rem;
+    color: var(--color-cofee);
+    font-weight: 700;
+    white-space: nowrap;
+    margin-bottom: 0.4rem;
+}
+
+.different__card p{
+    margin-bottom: 0rem;
+}
+
+.different__card:hover{
+    background-color: #FFEED8;
+}
+.different__bottom h4{
+    font-size: 1.6rem;
+    color: var(--color-cofee);
+    margin-bottom:1.5rem ;
+}
+
+/* chance */
+
+.chance {
+    background-image: url("/img/chance__bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chance__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chance__info{
+    color:#FFFFFF;
+    max-width: 50%;
+}
+.chance__info h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+.chance__info p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1.4rem;
+}
+.chance__image{
+    margin: 3rem 3rem;
+}
+
+/* feedback */
+
+.feedback__main{
+    text-align: center;
+}
+.feedback__header{
+    margin-bottom: 2.5rem;
+}
+.feedback__header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-cofee);
+    margin: 3rem 0 1rem;
+}
+.feedback__header p{
+    font-size: 1.2rem;
+    color: #707070;
+}
+.feedback__slider{
+    padding: 6.6rem 5.5rem  5.5rem;
+    background-color: #FFF9F1;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    position: relative;
+    margin-bottom: calc((138/16)*1rem);
+    transition: transform 1s ease;
+}
+.feedback__slider p{
+    font-size: 1.1rem;
+    color: #707070;
+    font-weight: 600;
+    line-height: 2rem;
+    transition: transform 1s ease;
+}
+.slider__name  {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.8rem;
+    color: var(--color-cofee);
+}
+.slider__proffesion {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.slider__button{
+    padding: 1.8rem;
+}
+.slider__button--left{
+    position: absolute;
+    left: -2.5rem;
+    top: 50%;
+}
+.slider__button--right{
+    position: absolute;
+    right: -2.5rem;
+    top: 50%;
+}
+.slider__quot{
+    position: absolute;
+    left: 1.8rem;
+    top: 1.8rem;
+}
+.slider__coffeBLast--left{
+    position: absolute;
+    left: -10rem;
+    bottom: -7rem;
+}
+.slider__coffeBLast--right{
+    position: absolute;
+    right: -10rem;
+    top: -7rem;
+}
+.slider__icon{
+    position: absolute;
+    bottom: -5rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* subscrive */
+
+.subscribe{
+    background-image: url("/img/chance__bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subscribe__main{
+    text-align: center;
+    padding: 5rem 0;
+    color: #FFFFFF;
+    position: relative;
+}
+.left__cup{
+    position: absolute;
+    left: -10rem;
+    bottom: -5rem;
+}
+.right__cup{
+    position: absolute;
+    right: -10rem;
+    bottom: -5rem;
+}
+.subscribe__main h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.subscribe__main p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.subscribe__form input{
+    padding: calc((19/16)*1rem) 15rem calc((18/16)*1rem) 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+
+}
+.subscribe__form input:focus {
+    outline: none;
+}
+
+.subscribe__form button{
+    border-radius: 0;
+    margin: 0;
+}
+
+/* footer */
+
+footer{
+    background:linear-gradient(to bottom, rgba(68, 40, 8, 1), rgba(146, 93, 33, 0.9)),  url('/img/fotter_image.png');
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
+    padding: calc((162/16)*1rem) 0 4rem;
+
+}
+.footer__info{
+    text-align: start;
+    max-width: 40%;
+}
+.footer__info h3{
+    font-size: 3rem;
+    font-family: 'Clicker Script', serif;
+    font-weight: 400;
+}
+.footer__info p{
+    margin: 1.2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+.footer__link a{
+    margin-right: 1.2rem;
+}
+.footer__collect{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.footer__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+.footer__list h4{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.footer__list a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 0.4s ease;
+}
+.footer__list a:hover{
+    scale: 1.1;
+    color: #FFEED8;
+}

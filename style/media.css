@@ -1,0 +1,133 @@
+
+@media(max-width:1024px){
+    html{
+        font-size: 16px;
+    }
+    /* header */
+
+    .morning__main{
+        text-align: center;
+    }
+    .header__contact{
+        display: flex;
+        justify-content: space-around;
+    }
+    .morning__main p{
+        margin: 0 auto;
+    }
+
+    /* discover */
+    .discover__main img{
+        display: none;
+    }
+    .discover__info{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* blend */
+
+    .collection__coffe ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    /* different */
+
+    .different__collection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* chance */
+    .chance__info{
+        text-align: center;
+         margin: 2rem auto;
+    }
+    .chance__image{
+        display: none;
+    }
+
+    /* feedback */
+    .feedback__slider button{
+        padding: 1rem 1.5rem;
+
+    }
+    .slider__button--left{
+        position: absolute;
+        left: 0.8rem;
+    }
+    .slider__button--right{
+        position: absolute;
+        right:0.8rem;
+    }
+    .blast{
+        display: none;
+    }
+
+    /* subscribe */
+
+    .subscribe__main img{
+        display: none;
+    }
+
+    /* footer */
+    .footer__main{
+        flex-direction: column;
+    }
+    .footer__info{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer__collect{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 14px;
+    }
+}
+@media(max-width:470px){
+    html{
+        font-size: 12px;
+    }
+    body{
+        padding: 0.5rem;
+    }
+    header{
+        opacity: 0.9;
+    }
+    .subscribe__form{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .header__contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .burger__menu{
+        display: flex;
+    }
+    .header__nav{
+        display: none;
+
+    }
+    .header__buttons{
+        display: none;
+    }
+    .header__menu--hidden{
+        display: none;
+    }
+}
