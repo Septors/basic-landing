@@ -479,7 +479,7 @@ main{
 /* footer */
 
 footer{
-    background:linear-gradient(to bottom, rgba(68, 40, 8, 1), rgba(146, 93, 33, 0.9)),  url('img/fotter_image.png');
+    background:linear-gradient(to bottom, rgba(68, 40, 8, 1), rgba(146, 93, 33, 0.9)),  url('/img/fotter_image.png');
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
