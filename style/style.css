@@ -39,7 +39,7 @@ button:hover{
 
 header{
     background:   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/img/menu__bgi1.png') ;
+    url('img/menu__bgi1.png') ;
     background-size: cover;
     background-position: top center ;
 
@@ -130,7 +130,7 @@ main{
 .morning{
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/img/header__bgi.png') ;
+    url('img/header__bgi.png') ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -321,7 +321,7 @@ main{
 /* chance */
 
 .chance {
-    background-image: url("/img/chance__bg.png");
+    background-image: url("img/chance__bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -430,7 +430,7 @@ main{
 /* subscrive */
 
 .subscribe{
-    background-image: url("/img/chance__bg.png");
+    background-image: url("img/chance__bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -479,7 +479,7 @@ main{
 /* footer */
 
 footer{
-    background:linear-gradient(to bottom, rgba(68, 40, 8, 1), rgba(146, 93, 33, 0.9)),  url('/img/fotter_image.png');
+    background:linear-gradient(to bottom, rgba(68, 40, 8, 1), rgba(146, 93, 33, 0.9)),  url('img/fotter_image.png');
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
